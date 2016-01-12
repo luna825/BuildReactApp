@@ -1,12 +1,14 @@
 import React from 'react'
-
+var SearchGithub = require('./SearchGithub')
 
 var Main = React.createClass({
     render:function  () {       
         return(
             <div className="main-container">
                 <nav className="navbar navbar-default navbar-static-top">
-                    <div className="col-sm-7 col-sm-offset-2" style={{marginTop:15}}>MENU</div>
+                    <div className="col-sm-7 col-sm-offset-2" style={{marginTop:15}}>
+                        <SearchGithub />
+                    </div>
                 </nav>
                 <div className="container">
                     {this.props.children}
